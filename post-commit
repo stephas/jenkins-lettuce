@@ -1,2 +1,2 @@
 echo committed, triggering jenkins
-wget http://localhost:8080/job/jenkins-lettuce/build
+wget http://localhost:8080/job/jenkins-lettuce/build -O - > /dev/null
