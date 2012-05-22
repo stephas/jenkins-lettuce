@@ -1,0 +1,11 @@
+pwd
+make test
+if [ `date +%w` -eq 6 ]; then
+  echo "Enjoy your life. Do not code on Sunday!"
+  exit 1
+fi
+if [ `date +%H` -gt 20 ]; then
+  echo "Enjoy your life. Do not code at night!"
+  exit 1
+fi
+exit 1
