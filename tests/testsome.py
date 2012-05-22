@@ -2,4 +2,5 @@ def test_pass():
     pass
 
 def test_hello():
-    pass
+    import myapp.hello
+    assert myapp.hello.hello_world() == 'Hello World'
