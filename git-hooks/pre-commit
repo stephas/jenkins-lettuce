@@ -1,5 +1,9 @@
 pwd
 make test
+if [ $? -ne 0 ]; then
+  echo "Some of your tests failed."
+  exit 1
+fi
 if [ `date +%w` -eq 6 ]; then
   echo "Enjoy your life. Do not code on Sunday!"
 fi
