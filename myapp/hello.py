@@ -10,7 +10,7 @@ print(hello_world())
 
 def factorial(number):
     """ return factorial of given number """
-    number == int(number)
+    number = int(number)
     if (number == 0) or (number == 1):
         return 1
     else:
