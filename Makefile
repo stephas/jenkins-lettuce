@@ -2,4 +2,5 @@ init:
 	pip install -r requirements.txt
 
 test:
-	nosetests tests -vs
+	nosetests tests -v
+	lettuce tests
