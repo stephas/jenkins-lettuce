@@ -7,7 +7,8 @@ def given_i_have_the_number_0(step, number):
 
 @step('When I compute its factorial')
 def when_i_compute_its_factorial(step):
-    world.number = factorial(world.number)
+    import myapp.hello
+    world.number = myapp.hello.factorial(world.number)
 
 @step('Then I see the number (\d+)')
 def then_i_see_the_number_1(step, expected):
@@ -26,13 +27,7 @@ def given_i_have_a_bunch_of_numbers(step):
 
 @step('I see the function output matching the table entry above.')
 def i_see_the_function_output_matching_the_table_entry_above(step):
+    import myapp.hello
     for n in world.numbers:
-        assert factorial(n['number']) == int(n['factorial'])
+        assert myapp.hello.factorial(n['number']) == int(n['factorial'])
 
-
-def factorial(number):
-    number == int(number)
-    if (number == 0) or (number == 1):
-        return 1
-    else:
-        return number*factorial(number-1)

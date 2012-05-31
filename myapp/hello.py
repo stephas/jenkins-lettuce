@@ -6,3 +6,10 @@ def hello_world():
     return 'Hello World'
 
 print(hello_world())
+
+def factorial(number):
+    number == int(number)
+    if (number == 0) or (number == 1):
+        return 1
+    else:
+        return number*factorial(number-1)
