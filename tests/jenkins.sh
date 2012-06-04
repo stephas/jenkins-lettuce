@@ -1,14 +1,6 @@
 # if workspace does not exist, create in root of project dir
 if [ -z $WORKSPACE ]; then
-    DIR="$( cd "$( dirname "$0" )"/.. && pwd )"
-    WORKSPACE=$DIR/workspace
-    if [ ! -d $WORKSPACE ]; then
-        echo "workspace dir does not exist, creating"
-        mkdir $WORKSPACE
-        if [ $? -ne 0 ]; then
-            exit 1
-        fi
-    fi
+    WORKSPACE="$( cd "$( dirname "$0" )"/.. && pwd )"
 fi
 
 PYENV_HOME=$WORKSPACE/.pyenv/
