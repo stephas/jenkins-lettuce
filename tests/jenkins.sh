@@ -27,6 +27,7 @@ pip install --quiet pylint
 pip install --quiet lettuce
 
 nosetests --with-xcoverage --with-xunit --cover-package=myapp --cover-erase
-lettuce --with-xunit tests/
+coverage run $(which lettuce) --with-xunit tests/
+coverage xml -o coverage2.xml
 pylint -f parseable myapp/ | tee pylint.out
 pep8 myapp | tee pep8.out
