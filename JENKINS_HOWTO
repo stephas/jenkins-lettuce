@@ -1,0 +1,20 @@
+0. Set APPNAME in tests/jenkins.sh:1
+1. Install java
+2. Install jenkins
+wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war
+Run Jenkins
+java -jar jenkins.war
+3. Install jenkins plugins: cobertura, git, violations
+4. Add freestyle project with name of app
+5. Add build step:
+$SHELL -xe tests/jenkins.sh
+6. Configure
+   a. git to pull from github/local dir
+   b. cobertura:
+      **/coverage.xml,**/coverage2.xml
+   c. Publish JUnit test results
+      nosetests.xml,lettucetests.xml
+   d. report violations
+      pep8: pep8.out
+      pylint: pylint.out
+7. install triggers timer or commit-based (optional)
