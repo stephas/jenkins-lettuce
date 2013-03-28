@@ -1,4 +1,4 @@
-APPNAME=myapp
+APPNAME=$(cat APPNAME)
 
 # if workspace does not exist, create in root of project dir
 source $(dirname $0)/ensure_workspace.sh

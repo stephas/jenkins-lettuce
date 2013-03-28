@@ -12,6 +12,8 @@ Easy setup of commit hooks for developers to run smaller test suite before pushe
 
 Use as base for other python projects.
 
+Maintain Vagrantfile to bootstrap jenkins environment on localhost:18080 for Ubuntu 12.
+
 Get started
 -----------
 
@@ -25,3 +27,10 @@ if you have virtualbox and the vagrant gem, you can get a virtualmachine using:
   $ vagrant up
   ...
 ```
+
+1. set the name for your application like so (no spaces atm):
+
+```
+  $ echo myapp > APPNAME
+```
+
