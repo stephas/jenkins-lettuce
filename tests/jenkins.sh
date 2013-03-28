@@ -11,6 +11,7 @@ bash -e tests/clean.sh
 # Create virtualenv and install necessary packages
 virtualenv $PYENV_HOME -p python2.7
 . $PYENV_HOME/bin/activate
+pip install --quiet -r requirements.txt
 pip install --quiet nosexcover
 pip install --quiet pep8
 pip install --quiet pylint

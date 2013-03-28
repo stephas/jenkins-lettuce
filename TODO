@@ -1,3 +1,4 @@
+add git config user.name to vagrant/jenkins.sh
 use requirements.txt
 make sure tests/jenkins.sh and git-hooks/post-commit both get APPNAME from a variable
 unless requirements change or override env var is set, do not rebuilt virtualenv each time

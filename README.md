@@ -16,3 +16,12 @@ Get started
 -----------
 
 see JENKINS_HOWTO for the manual jenkins install and configuration
+
+a basic jenkins install is available in the given Vagrantfile.
+
+if you have virtualbox and the vagrant gem, you can get a virtualmachine using:
+
+```
+  $ vagrant up
+  ...
+```
