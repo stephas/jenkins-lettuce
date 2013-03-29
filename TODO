@@ -1,2 +1,2 @@
-make sure tests/jenkins.sh and git-hooks/post-commit both get APPNAME from a variable
+git post-commit hook have portnumber same as in Vagrantfile
 unless requirements change or override env var is set, do not rebuilt virtualenv each time

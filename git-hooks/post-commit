@@ -1,6 +1,6 @@
 APPNAME=$(cat APPNAME)
 echo committed $APPNAME, triggering jenkins
-wget -q http://localhost:8080/job/$APPNAME-development/build -O - > /dev/null
+wget -q http://localhost:18080/job/$APPNAME-development/build -O - > /dev/null
 if [ $? -eq 0 ]; then
     echo "jenkins notified to rebuild"
 fi
