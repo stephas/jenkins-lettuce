@@ -17,20 +17,23 @@ Maintain Vagrantfile to bootstrap jenkins environment on localhost:18080 for Ubu
 Get started
 -----------
 
-see JENKINS_HOWTO for the manual jenkins install and configuration
-
-a basic jenkins install is available in the given Vagrantfile.
-
-if you have virtualbox and the vagrant gem, you can get a virtualmachine using:
-
-```
-  $ vagrant up
-  ...
-```
-
 1. set the name for your application like so (no spaces atm):
 
 ```
   $ echo myapp > APPNAME
+```
+
+2. see [manual jenkins install and configuration](vagrant/JENKINS_HOWTO)
+
+OR
+
+use the basic jenkins install available in the given Vagrantfile (see step 3.)
+
+
+3. if you have virtualbox and the vagrant gem, you can get a virtualmachine using:
+
+```
+  $ vagrant up
+  ...
 ```
 
