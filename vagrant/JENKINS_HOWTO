@@ -1,4 +1,4 @@
-0. Set APPNAME in tests/jenkins.sh:1
+0. set APPNAME like 'echo myapp > APPNAME'
 1. Install java
 2. Install jenkins
 wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war
