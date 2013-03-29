@@ -1,1 +1,6 @@
 coverage
+nosexcover
+pep8
+pylint
+lettuce
+cram

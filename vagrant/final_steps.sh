@@ -1,7 +1,7 @@
 APPNAME=$(cat /vagrant/APPNAME)
 
 sudo apt-get install -y python-pip
-sudo pip install -r /vagrant/requirements.txt
+sudo pip install virtualenv
 
 echo "importing jenkins job for: $APPNAME"
 sed "s/APPNAME/$APPNAME/" /vagrant/vagrant/jenkins_job.xml.template > /vagrant/jenkins/jenkins.$APPNAME.xml

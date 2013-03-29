@@ -1,15 +1,2 @@
-add git config user.name to vagrant/jenkins.sh e.g. fix:
-    *** Please tell me who you are.
-    
-    Run
-    
-      git config --global user.email "you@example.com"
-      git config --global user.name "Your Name"
-    
-    to set your account's default identity.
-    Omit --global to set the identity only in this repository.
-    
-    fatal: empty ident  <jenkins@precise64.(none)> not allowed
-use requirements.txt
 make sure tests/jenkins.sh and git-hooks/post-commit both get APPNAME from a variable
 unless requirements change or override env var is set, do not rebuilt virtualenv each time

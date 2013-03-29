@@ -35,8 +35,8 @@
     <reference></reference>
     <excludedRegions></excludedRegions>
     <excludedUsers></excludedUsers>
-    <gitConfigName></gitConfigName>
-    <gitConfigEmail></gitConfigEmail>
+    <gitConfigName>jenkins</gitConfigName>
+    <gitConfigEmail>jenkins@localhost</gitConfigEmail>
     <skipTag>false</skipTag>
     <includedRegions></includedRegions>
     <scmName></scmName>
