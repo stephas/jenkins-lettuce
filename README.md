@@ -36,3 +36,12 @@ Get started
       ...
     ```
 
+    OR
+    
+    if you have pip and virtualenv, you can cross your fingers that your system is setup and run
+    
+    ```
+      $ bash -xe tests/jenkins.sh
+    ```
+    
+4.  adopt the project, by moving the myapp folder to name_of_your_project
